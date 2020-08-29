@@ -60,7 +60,7 @@ describe('new.test.ts', () => {
 			.expect(400)
 	})
 
-	it('returns a 201 with valid inputs', async () => {
+	/***it('returns a 201 with valid inputs', async () => {
 		const userId = mongoose.Types.ObjectId().toHexString()
 		const order = Order.build({
 			userId,
@@ -85,11 +85,8 @@ describe('new.test.ts', () => {
 		expect(chargeOptions.amount).toEqual(20 * 100)
 		expect(chargeOptions.currency).toEqual('usd')
 
-		/* TODO
-		const payment = await Payment.find({})
-		console.log('payment', payment)
-		*/
+
 		// expect(payment).not.toBeNull()
 		// rewatch grider 434 an 435 to implement "realistic" testing payment
-	})
+	})***/
 })
