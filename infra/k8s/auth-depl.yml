@@ -10,9 +10,9 @@ spec:
   template:
     metadata:
       labels:
-        app: auth 
+        app: auth
     spec:
-      containers: 
+      containers:
         - name: auth
           image: jsphbtst/auth
           env:
@@ -20,7 +20,7 @@ spec:
               value: 'mongodb://auth-mongo-srv:27017/auth'
             - name: JWT_KEY
               valueFrom:
-                secretKeyRef: 
+                secretKeyRef:
                   # the one you set in kubernetes
                   name: jwt-secret
                   key: JWT_KEY

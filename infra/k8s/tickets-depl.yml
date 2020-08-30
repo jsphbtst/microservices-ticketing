@@ -10,9 +10,9 @@ spec:
   template:
     metadata:
       labels:
-        app: tickets 
+        app: tickets
     spec:
-      containers: 
+      containers:
         - name: tickets
           image: jsphbtst/tickets
           env:
@@ -25,10 +25,10 @@ spec:
             - name: NATS_CLUSTER_ID
               value: 'ticketing'
             - name: MONGO_URI
-              value:  'mongodb://tickets-mongo-srv:27017/tickets'
+              value: 'mongodb://tickets-mongo-srv:27017/tickets'
             - name: JWT_KEY
               valueFrom:
-                secretKeyRef: 
+                secretKeyRef:
                   # the one you set in kubernetes
                   name: jwt-secret
                   key: JWT_KEY

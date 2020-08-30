@@ -10,9 +10,9 @@ spec:
   template:
     metadata:
       labels:
-        app: client 
+        app: client
     spec:
-      containers: 
+      containers:
         - name: client
           image: jsphbtst/client
 ---
