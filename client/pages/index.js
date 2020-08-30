@@ -30,7 +30,7 @@ const Index = ({ currentUser, tickets }) => {
 
 			<hr />
 
-			<h2>Tickets</h2>
+			<h2>Tickets Bought</h2>
 			<table className='table'>
 				<thead>
 					<tr>
